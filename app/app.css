@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&family=Syncopate:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --gradient-bg: linear-gradient(90.64deg, #FF00FF 1.23%, #00BBFF 69.09%);
+}
+
+
+html,
+body {
+  @apply bg-white;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.gradient-text {
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border-wrapper {
+  display: inline-block;
+  padding: 1px 6px 6px 1px; /* Apply different padding values to match border-width */
+  border-radius: 8px; /* Apply the border radius here */
+  background: linear-gradient(90.64deg, #FF00FF 1.23%, #00BBFF 69.09%); /* Gradient for the background */
+  -webkit-mask-image: linear-gradient(white, white); /* Mask to allow gradient to show properly */
+  mask-image: linear-gradient(white, white); /* Ensure gradient appears only around the border */
+  position: relative; /* To position pseudo-elements like shadow */
+}
+
+.gradient-border-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -6px;
+  right: -6px;
+  bottom: -1px;
+  background: linear-gradient(90.64deg, #FF00FF 1.23%, #00BBFF 69.09%); /* Gradient border */
+  z-index: -1; /* Keep the border behind the button */
+  border-radius: 8px; /* Apply the border-radius to the shadow */
+}
+
+.gradient-border {
+  display: inline-block;
+  padding: 10px 34px; /* Padding for the button content */
+  border-radius: 8px; /* Apply border-radius to the button */
+  background-color: white; /* Button background color */
+  border: none; /* Remove the default border */
+  box-sizing: border-box; /* Ensure padding doesn't affect the button size */
+}
+
+
+
+.card {
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 24px; /* For rounded corners */
+  background: linear-gradient(white, white) padding-box, /* Inner fill */
+              linear-gradient(to top left, #00bfff, transparent) border-box; /* Gradient border */
+  position: relative;
+}
+
+/* Optional: To adjust disappearing corner */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: white;
+  z-index: 1; /* Ensure this layer is above the border */
+}
