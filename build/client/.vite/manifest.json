@@ -1,0 +1,56 @@
+{
+  "C:/My stuff/JOY/template1/app/app.css": {
+    "file": "assets/app-C6EjcOoq.css",
+    "src": "C:/My stuff/JOY/template1/app/app.css"
+  },
+  "_chunk-SYFQ2XB5-D3hMhDC0.js": {
+    "file": "assets/chunk-SYFQ2XB5-D3hMhDC0.js",
+    "name": "chunk-SYFQ2XB5"
+  },
+  "_with-props-DIjtTHdS.js": {
+    "file": "assets/with-props-DIjtTHdS.js",
+    "name": "with-props",
+    "imports": [
+      "_chunk-SYFQ2XB5-D3hMhDC0.js"
+    ]
+  },
+  "app/root.tsx?__react-router-build-client-route": {
+    "file": "assets/root-DcA6oN-9.js",
+    "name": "root",
+    "src": "app/root.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_with-props-DIjtTHdS.js",
+      "_chunk-SYFQ2XB5-D3hMhDC0.js"
+    ],
+    "assets": [
+      "assets/app-C6EjcOoq.css"
+    ]
+  },
+  "app/routes/home.tsx?__react-router-build-client-route": {
+    "file": "assets/home-Dt0fTmRn.js",
+    "name": "home",
+    "src": "app/routes/home.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_with-props-DIjtTHdS.js",
+      "_chunk-SYFQ2XB5-D3hMhDC0.js"
+    ],
+    "assets": [
+      "assets/messenger-DhxflJ7d.svg"
+    ]
+  },
+  "assets/icons/messenger.svg": {
+    "file": "assets/messenger-DhxflJ7d.svg",
+    "src": "assets/icons/messenger.svg"
+  },
+  "node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx": {
+    "file": "assets/entry.client-DUym19s2.js",
+    "name": "entry.client",
+    "src": "node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx",
+    "isEntry": true,
+    "imports": [
+      "_chunk-SYFQ2XB5-D3hMhDC0.js"
+    ]
+  }
+}
