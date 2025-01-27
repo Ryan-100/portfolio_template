@@ -10,7 +10,6 @@
   --gradient-bg: linear-gradient(90.64deg, #FF00FF 1.23%, #00BBFF 69.09%);
 }
 
-
 html,
 body {
   @apply bg-white;
